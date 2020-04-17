@@ -3,9 +3,11 @@
 - A flutter weather application that can fetch live-weather information of any city in the world
 - Try any city whose weather you wanna know!!
 
----
+For help getting started with Flutter, view the online [documentation](https://flutter.dev).
 
-App UI
+You can check out the corresponding Google code lab [here](https://codelabs.developers.google.com/codelabs/flutter/index.html?index=..%2F..%2Findex#0).
+
+# Demo
 
 ![Clima Gif](clima.gif)
 
@@ -22,23 +24,49 @@ The [Open Weather](https://openweathermap.org/current) was used to fetch data.
 
 - [Flutter Geolocator Plugin](https://pub.dev/packages/geolocator) was used to fetch the coordinates of location.
 
----
+Click on run in Android studio/ type "flutter run" in terminal of VsCode and there you go!.
 
-🖥Requirements
 
-- Any Operating System (i.e. MacOS X, Linux, WIndows)
-- IDE (i.e. VsCode, Android Studio)
-- **Flutter plugin** if not there [Click here to install](https://flutter.dev/docs/get-started/install)
-- Simulator/Emulator/A real mobile device connected to the system.
+# Getting Started
 
----
+**Note:** Make sure your Flutter environment is setup & if not installed then [Click here to install](https://flutter.dev/docs/get-started/install)
 
-How to run:
+**Installation**
+
+In the command terminal, run the following commands:
 
 ```
-- Download the source code by using command "git clone https://github.com/khan-rehan/Clima-A-live-weather-App.git" in command line.
-- Open the project in Android studio/Vscode and also open the simulator/emulator.
-- Now do the following:
-    1. Type flutter get packages in terminal of Studio/VsCode.
-    2. Click on run in Android studio/ type "flutter run" in terminal of VsCode and there you go!.
+$ git clone https://github.com/khan-rehan/Clima-A-live-weather-App.git
+
+$ cd Clima-A-live-weather-App/
+
+$ flutter run
 ```
+
+# Simulate for iOS
+
+## Method One
+
+```
+Open the project in Xcode from ios/Runner.xcodeproj.
+Hit the play button.
+```
+
+## Method Two
+
+```
+Run the following command in your terminal.
+$ open -a Simulator
+$ flutter run
+```
+
+# Simulate for Android
+
+```
+Make sure you have an Android emulator installed and running.
+Run the following command in your terminal.
+$ flutter run
+```
+
+
+
