@@ -1,22 +1,42 @@
-# Clima-A-live-weather-App
-An application fetching live weather information of any city in world from internet.
-Try any city whose weather u wanna know!!
+# Clima ![Author -Rehan Khan](https://img.shields.io/badge/Author-Rehan%20Khan-blue)
 
-App Icon:
+- A flutter weather application that can fetch live-weather information of any city in the world
+- Try any city whose weather you wanna know!!
 
-<img width="96" alt="Screenshot 2019-08-15 at 6 10 17 AM" src="https://user-images.githubusercontent.com/42263217/63065371-6b82b700-bf23-11e9-812d-3fb25a3d4dab.png">
+---
 
+![Clima Gif](clima.gif)
 
-App UI:
+---
 
+<img width="217" alt="Screenshot 2020-04-17 at 10 01 31 AM" src="https://user-images.githubusercontent.com/42263217/79532535-0aebe100-8093-11ea-93fe-49b032be61dd.png">
 
-<img width="332" alt="Screenshot 2019-08-15 at 6 09 36 AM" src="https://user-images.githubusercontent.com/42263217/63065376-6e7da780-bf23-11e9-9196-f14e78a49829.png">
+The [Open Weather](https://openweathermap.org/current) was used to fetch data.
 
-<img width="335" alt="Screenshot 2019-08-15 at 6 09 57 AM" src="https://user-images.githubusercontent.com/42263217/63065380-70476b00-bf23-11e9-9851-8822efd6c4ad.png">
+- Generate an api key here first by login into the website for one's own development purpose
 
- I will definitely update the UI very soon!!
- 
- Successful implementation of 
- 1.Async&await
- 2.Exception Handling & Null Aware Operators
- 3.Json Parsing
+- By geographic coordnates Api link was used:
+  `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}`
+
+- [Flutter Geolocator Plugin](https://pub.dev/packages/geolocator) was used to fetch the coordinates of location.
+
+---
+
+🖥Requirements
+
+- Any Operating System (i.e. MacOS X, Linux, WIndows)
+- IDE (i.e. VsCode, Android Studio)
+- **Flutter plugin** if not there [Click here to install](https://flutter.dev/docs/get-started/install)
+- Simulator/Emulator/A real mobile device connected to the system.
+
+---
+
+How to run:
+
+```
+- Download the source code by using command "git clone https://github.com/khan-rehan/Todoey.git" in command line.
+- Open the project in Android studio/Vscode and also open the simulator/emulator.
+- Now do the following:
+    1. Type flutter get packages in terminal of Studio/VsCode.
+    2. Click on run in Android studio/ type "flutter run" in terminal of VsCode and there you go!.
+```
