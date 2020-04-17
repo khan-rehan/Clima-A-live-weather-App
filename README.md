@@ -5,6 +5,8 @@
 
 ---
 
+App UI
+
 ![Clima Gif](clima.gif)
 
 ---
@@ -34,7 +36,7 @@ The [Open Weather](https://openweathermap.org/current) was used to fetch data.
 How to run:
 
 ```
-- Download the source code by using command "git clone https://github.com/khan-rehan/Todoey.git" in command line.
+- Download the source code by using command "git clone https://github.com/khan-rehan/Clima-A-live-weather-App.git" in command line.
 - Open the project in Android studio/Vscode and also open the simulator/emulator.
 - Now do the following:
     1. Type flutter get packages in terminal of Studio/VsCode.
