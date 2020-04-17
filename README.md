@@ -24,9 +24,6 @@ The [Open Weather](https://openweathermap.org/current) was used to fetch data.
 
 - [Flutter Geolocator Plugin](https://pub.dev/packages/geolocator) was used to fetch the coordinates of location.
 
-Click on run in Android studio/ type "flutter run" in terminal of VsCode and there you go!.
-
-
 # Getting Started
 
 **Note:** Make sure your Flutter environment is setup & if not installed then [Click here to install](https://flutter.dev/docs/get-started/install)
