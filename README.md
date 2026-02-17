@@ -1,69 +1,56 @@
-# Clima ![Author -Rehan Khan](https://img.shields.io/badge/Author-Rehan%20Khan-blue)
+# Clima - Live Weather App
 
-- A flutter weather application that can fetch live-weather information of any city in the world
-- Try any city whose weather you wanna know!!
+![Author - Rehan Khan](https://img.shields.io/badge/Author-Rehan%20Khan-blue)
 
-For help getting started with Flutter, view the online [documentation](https://flutter.dev).
+A Flutter weather application that fetches real-time weather data for any city worldwide. Uses GPS location to get current weather or allows manual city search.
 
-You can check out the corresponding Google code lab [here](https://codelabs.developers.google.com/codelabs/flutter/index.html?index=..%2F..%2Findex#0).
+## Features
 
-# Demo
+- Get weather for your current location via GPS
+- Search weather by city name
+- Displays temperature, weather condition, and description
+- Weather condition icons and messages
+- Dark-themed UI
 
-![Clima Gif](clima.gif)
+## Tech Stack
 
----
+- **Framework:** Flutter
+- **Language:** Dart
+- **API:** [OpenWeatherMap](https://openweathermap.org/current)
+- **Location:** [Flutter Geolocator Plugin](https://pub.dev/packages/geolocator)
+- **HTTP:** Dart HTTP package
 
-<img width="217" alt="Screenshot 2020-04-17 at 10 01 31 AM" src="https://user-images.githubusercontent.com/42263217/79532535-0aebe100-8093-11ea-93fe-49b032be61dd.png">
-
-The [Open Weather](https://openweathermap.org/current) was used to fetch data.
-
-- Generate an api key here first by login into the website for one's own development purpose
-
-- By geographic coordnates Api link was used:
-  `api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={your api key}`
-
-- [Flutter Geolocator Plugin](https://pub.dev/packages/geolocator) was used to fetch the coordinates of location.
-
-# Getting Started
-
-**Note:** Make sure your Flutter environment is setup & if not installed then [Click here to install](https://flutter.dev/docs/get-started/install)
-
-**Installation**
-
-In the command terminal, run the following commands:
+## Project Structure
 
 ```
-$ git clone https://github.com/khan-rehan/Clima-A-live-weather-App.git
-
-$ cd Clima-A-live-weather-App/
-
-$ flutter run
+lib/
+├── main.dart
+├── screens/
+│   ├── loading_screen.dart      # Initial screen, fetches location
+│   ├── location_screen.dart     # Displays weather data
+│   └── city_screen.dart         # City search input
+├── services/
+│   ├── location.dart            # GPS location service
+│   ├── networking.dart          # API networking
+│   └── weather.dart             # Weather data handler
+└── utilities/
+    └── constants.dart           # App styling constants
 ```
 
-# Simulate for iOS
+## Setup
 
-## Method One
+**Prerequisites:** [Flutter SDK](https://flutter.dev/docs/get-started/install), an [OpenWeatherMap API key](https://openweathermap.org/appid)
 
-```
-Open the project in Xcode from ios/Runner.xcodeproj.
-Hit the play button.
-```
-
-## Method Two
-
-```
-Run the following command in your terminal.
-$ open -a Simulator
-$ flutter run
+```sh
+git clone https://github.com/khan-rehan/Clima-A-live-weather-App.git
+cd Clima-A-live-weather-App
+flutter run
 ```
 
-# Simulate for Android
+## Demo
 
-```
-Make sure you have an Android emulator installed and running.
-Run the following command in your terminal.
-$ flutter run
-```
+![Clima Demo](clima.gif)
 
+## Screenshot
 
-
+<img width="217" alt="Clima" src="https://user-images.githubusercontent.com/42263217/79532535-0aebe100-8093-11ea-93fe-49b032be61dd.png">
